@@ -1,0 +1,36 @@
+smart-attendance-performance-system/
+│
+├── .gitignore
+├── README.md                 <-- (Section 5.1 Requirement)
+├── statement.md              <-- (Section 5.2 Requirement)
+├── requirements.txt          <-- Dependencies & Libraries
+│
+├── config/
+│   └── config.yaml           <-- System configurations & threshold parameters
+│
+├── data/
+│   ├── raw_faces/            <-- Student face dataset images
+│   ├── encodings.pkl         <-- Face embeddings file
+│   └── sample_dataset.csv    <-- Academic performance training data
+│
+├── src/                      <-- Complete Source Code (10 Modules)
+│   ├── __init__.py
+│   ├── face_detection.py     <-- OpenCV Haar Cascade / HOG Face Detector
+│   ├── face_recognition.py   <-- Dlib / ResNet 128-d Feature Extractor
+│   ├── attendance_manager.py <-- Automated Attendance Marking & DB Logger
+│   ├── performance_eval.py  <-- Random Forest Classifier for Risk Analysis
+│   ├── db_connector.py       <-- SQLite / PostgreSQL Interface
+│   ├── auth.py               <-- Role-based authentication (Admin/Faculty/Student)
+│   ├── app.py                <-- Web Dashboard (Flask/Streamlit App)
+│   └── utils.py              <-- Helper routines (CLAHE, Image preprocessing)
+│
+├── tests/                    <-- Test Suite
+│   ├── test_face_recognition.py
+│   ├── test_attendance.py
+│   └── test_performance_eval.py
+│
+└── docs/                     <-- Diagrams and Project Report PDF
+    ├── architecture.png
+    ├── er_diagram.png
+    ├── use_case.png
+    └── Smart_Attendance_Project_Report.pdf
