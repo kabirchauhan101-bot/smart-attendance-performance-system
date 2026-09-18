@@ -1,0 +1,28 @@
+1. Create a Virtual Environment & Install Dependencies
+Bash
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+2. Database Setup & Model Training
+Bash
+python src/db_connector.py
+python src/performance_eval.py --train
+
+
+3. Run the Application
+Bash
+streamlit run src/app.py
+🧪 Testing Instructions
+Run the automated test suite using pytest:
+
+Bash
+# Execute unit tests
+pytest tests/
+
+# Execute test with coverage report
+pytest --cov=src tests/
