@@ -1,0 +1,42 @@
+# Smart Attendance Management and Student Performance Tracking System
+
+![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+An AI-powered computer vision and machine learning platform designed to automate attendance tracking and predict student academic performance risks[cite: 1].
+
+---
+
+## 📌 Project Overview
+Automated attendance logging reduces administrative overhead and eliminates proxy attendance[cite: 1]. By correlating attendance records with assessment scores using a Random Forest classification model, the system identifies at-risk students early in the academic session.
+
+---
+
+## ✨ Key Features
+- 📷 **Facial Recognition Attendance:** Detects and verifies facial embeddings in real time using OpenCV and Dlib.
+- 📊 **Performance Analytics:** Visualizes attendance trends vs. internal marks via an interactive dashboard.
+- ⚠️ **At-Risk Student Identification:** ML model flags students likely to perform poorly based on attendance trends and assignment grades.
+- 🔐 **Role-Based Authorization:** Custom interfaces for System Administrators, Faculty, and Students.
+- 📑 **Report Generation:** Export daily and monthly attendance logs to CSV/PDF format.
+
+---
+
+## 🛠️ Technologies & Tools Used
+- **Programming Language:** Python 3.9+
+- **Computer Vision / ML:** OpenCV, Dlib, scikit-learn, NumPy, Pandas
+- **Web Framework:** Streamlit / Flask
+- **Database:** SQLite3 / PostgreSQL
+- **Version Control:** Git & GitHub
+
+---
+
+## 🚀 Installation & Setup Guide
+
+### 1. Prerequisites
+Ensure Python 3.9 or higher and CMake (for Dlib installation) are installed on your machine.
+
+### 2. Clone the Repository
+```bash
+git clone [(https://github.com/kabirchauhan101-bot/smart-attendance-performance-system)]
+cd smart-attendance-performance-system
